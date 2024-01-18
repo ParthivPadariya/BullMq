@@ -18,19 +18,6 @@ const notification = new Queue('email-queue',{connection:connectRedis}).on('erro
      throw new Error("Connection Error Occurred")
 });
 
-// hear we have give queue name
-/*
-const notification = new Queue('email-queue',{
-    connection:{
-        host: 'redis-26a7bab1-parthiv-e99f.a.aivencloud.com',
-        port: 10758,
-        password:'AVNS_g7etIxSFYljuLuIqZ3Z',
-    username:'default'
-   } 
-}).on('error', (error) => {
-    throw new Error("Connection Error Occurred")
-});
-*/
 
 async function init() {
     app.use(express.json())
