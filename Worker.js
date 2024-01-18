@@ -5,8 +5,8 @@ const nodemailer = require('nodemailer');
 const transporter = nodemailer.createTransport({
     service: 'Gmail', // Use your email service provider
     auth: {
-        user: 'parthiv.padariya@gmail.com', // Your email address
-        pass: 'ouia cejz zcre xvpz', // Your email password
+        user: '', // Your email address
+        pass: ''// Your email password
     },
 });
 
@@ -32,10 +32,10 @@ function SendMessageFromQueue() {
     
     {
         connection: {
-            host: 'redis-26a7bab1-parthiv-e99f.a.aivencloud.com',
-            port: 10758,
-            password: 'AVNS_g7etIxSFYljuLuIqZ3Z',
-            username: 'default'
+            host: '',
+            port: ,
+            password: '',
+            username: ''
         }
 
     }).on('completed',() => {
